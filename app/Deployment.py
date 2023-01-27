@@ -166,12 +166,12 @@ def app():
         n_df = pd.DataFrame( data , columns = ['age', 'bmi', 'OHE_male', 'OHE_1', 'OHE_2', 'OHE_3', 'OHE_4', 'OHE_5',
         'OHE_yes', 'OHE_northwest', 'OHE_southeast', 'OHE_southwest'])
 
-        def rupiah_format(angka, with_prefix=False, desimal=2):
-            locale.setlocale(locale.LC_NUMERIC, 'IND')
-            rupiah = locale.format("%.*f", (desimal, angka), True)
-            if with_prefix:
-                return "Rp. {}".format(rupiah)
-            return rupiah
+        # def rupiah_format(angka, with_prefix=False, desimal=2):
+        #     locale.setlocale(locale.LC_NUMERIC, 'IND')
+        #     rupiah = locale.format("%.*f", (desimal, angka), True)
+        #     if with_prefix:
+        #         return "Rp. {}".format(rupiah)
+        #     return rupiah
 
         pred= lin_reg.predict(n_df)
 
@@ -180,11 +180,11 @@ def app():
         #Hasil Perhitungan convert ke Rupiah
         note = (charge[0])*15159
         note2 = int(note)
-        note3 = rupiah_format(note2)
+        # note3 = rupiah_format(note2)
 
         
         if st.button('Hitung Prediksi Biaya'):
-            st.write('Prediksi Biaya : Rp ', note3 )
+            st.write('Prediksi Biaya : Rp ', note2 )
             lottie_hello= load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_de909vf3.json")
             st_lottie(
                 lottie_hello,
