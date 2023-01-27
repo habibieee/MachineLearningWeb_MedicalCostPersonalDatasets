@@ -24,7 +24,7 @@ def load_lottieurl(url : str):
 # Model 
 def app():
     #Backend Section
-
+    st.write(" ### Unggah Data Anda ")
     df = pd.read_csv("app\insurance.csv")
 
     # Variable yang digunakan
