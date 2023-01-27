@@ -25,7 +25,7 @@ def load_lottieurl(url : str):
 def app():
     #Backend Section
 
-    df = pd.read_csv("app\insurance.csv")
+    df = pd.read_csv("insurance.csv")
 
     # Variable yang digunakan
     categorical_columns = ['sex','children', 'smoker', 'region']
