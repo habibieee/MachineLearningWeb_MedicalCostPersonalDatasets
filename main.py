@@ -22,8 +22,7 @@ def load_lottieurl(url : str):
         return None
     return r.json()
 
-st.markdown("<h1 style='text-align: center; '>Prediksi Biaya Kesehatan Perokok dengan Linear Regression</h1>", unsafe_allow_html=True)
-
+st.markdown("<h1 style='text-align: center; '>Prediksi Biaya Kesehatan dengan Linear Regression</h1>", unsafe_allow_html=True)
 app = MultiApp()
 
 
@@ -43,5 +42,7 @@ st.sidebar.title("Apa Itu Linear Regression")
 st.sidebar.markdown("""Regresi linear adalah teknik analisis data yang memprediksi nilai data yang tidak 
 diketahui dengan menggunakan nilai data lain yang terkait dan diketahui. Secara matematis memodelkan variabel 
 yang tidak diketahui atau tergantung dan variabel yang dikenal atau independen sebagai persamaan linier.""")
+st.sidebar.text("""src: https://www.kaggle.com/code/
+hely333/eda-regression/data""")
 
 app.run()
