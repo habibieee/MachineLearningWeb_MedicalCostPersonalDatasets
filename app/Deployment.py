@@ -184,7 +184,7 @@ def app():
 
         
         if st.button('Hitung Prediksi Biaya'):
-            st.write('Prediksi Biaya : Rp ', note2 )
+            st.write('Prediksi Biaya : $ ', note2 )
             lottie_hello= load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_de909vf3.json")
             st_lottie(
                 lottie_hello,
