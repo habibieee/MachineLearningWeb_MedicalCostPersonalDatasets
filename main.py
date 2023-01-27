@@ -33,7 +33,6 @@ app.add_app("Visualisasi Data",dashboard.app)
 
 st.sidebar.title("Machine Learning 3 TI E")
 st.sidebar.text("")
-st.sidebar.image("img\logo-psti.png", use_column_width=True)
 st.sidebar.text("")
 st.sidebar.title("Nama Kelompok :")
 st.sidebar.text("1. Muhammad Ghiyats Rasyid")
